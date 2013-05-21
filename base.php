@@ -48,11 +48,6 @@
 	$config = config_vars();
 	$page = basename($_SERVER['SCRIPT_FILENAME']);
 
-	/**
-	 *	@description 	Plugin and template functions
-	 *				 	Do NOT delete these lines!
-	 */
-
 	template::init();
 
 	require_once $root.'lib/plugins/plugin.php';
@@ -67,11 +62,9 @@
 
 	if ($config['enable'] && $user->row['user_level'] != ADMIN && basename($_SERVER['PHP_SELF']) != 'login.php') {
 		$message = ($config['enable_text']) ? $config['enable_text'] : 'Das Forum wurde deaktiviert';
-
 		message_box($message, '', '');
 	}
 
-	/** initiate plugins **/
 	$self = $_SERVER['PHP_SELF'];
 
 	if ($token->env == USER) {
@@ -103,7 +96,4 @@
 	$token->check('GET', $_GET);
 
 	template::assign("menu",$_GET['menu']);
-	
-	$selected_language = 'de';
-	
 ?>
