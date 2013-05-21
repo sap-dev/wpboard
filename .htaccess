@@ -1,0 +1,2 @@
+RewriteEngine on
+RewriteRule ^plugins.json$ plugin.php?plugin=com.wpboard.downloadbase&action=json

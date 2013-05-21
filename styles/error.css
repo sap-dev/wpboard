@@ -1,0 +1,53 @@
+body {
+	font-family: sans-serif;
+	font-size: 13px;
+	background: #f6f6f6;
+}
+
+#fatalError {
+	padding: 20px;
+	padding-bottom: 30px;
+	width: 600px;
+	margin: auto;
+	margin-top: 60px;
+	background: #fff;
+	box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+	padding: 20px;
+	padding-top: 0;
+	border-bottom: 1px solid #e0e0e0;
+	text-align: center;
+}
+
+	.title span {
+		font-weight: lighter;
+		color: #9b9b9b;
+	}
+
+.error {
+	padding: 20px;
+}
+
+.error:not(.MySQL) {
+	color: red;
+	border-bottom: 1px solid #e0e0e0;
+}
+
+.info {
+	color: #5b5b5b;
+	text-align: center;
+	margin-top: 40px;
+}
+
+.code {
+	padding: 20px;
+	background: #eee;
+	margin-top: 20px;
+	border: 1px solid #e0e0e0;
+}
+
+	.code code {
+		display: block;
+	}

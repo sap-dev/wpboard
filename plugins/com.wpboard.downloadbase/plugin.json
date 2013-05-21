@@ -1,0 +1,45 @@
+{
+"package": "com.wpboard.downloadbase",
+"name": "Downloaddatenbank",
+"version": "1.0.0",
+
+"permissions": {
+"SQL": {
+"createTables": 1,
+"accessTables": [
+"banlist",
+"bots",
+"forums",
+"forums_track",
+"mails",
+"posts",
+"poll_options",
+"poll_votes",
+"ranks",
+"smilies",
+"topics",
+"topics_track"
+]
+},
+
+"TPL": 1,
+
+"HTTP": [
+"a.gidix.de"
+],
+
+"FILES": {
+"accessFiles": 1,
+"writeFiles": 0
+},
+
+"CACHE": {
+"readCache": 1,
+"writeCache": 1
+}
+},
+
+"minVersion": "1.0.0 Pre-Alpha 1",
+"maxVersion": "3.0.0",
+"URL": "http://www.wpboard.tk/"
+}
